@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Motors sports</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .topnav {
+            display: flex;
+            align-items: center;
+            background-color: #000000;
+            padding: 10px;
+        }
+        .btn-nav {
+            background-color: #3d0000;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: azure;
+            border-radius: 5px;
+            text-decoration: none;
+            border: 2px solid #fff;
+            transition: background-color 0.5s ease;
+        }
+        .btn-nav:hover {
+            background-color: #950101;
+        }
+        .btn{
+            background-color: #950101;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: azure;
+            border-radius: 5px;
+            text-decoration: none;
+            border: 2px solid #fff;
+            transition: background-color 0.5s ease;  
+        }
+        .btn:hover{
+            background-color: #ff0000;
+        }
+        .reveal{
+            opacity: 0;
+            transform: translateY(24px);
+            animation: fadeUp .7s ease forwards;
+        } 
+
+        .icon-nav {
+            height: 100px;        
+            width: auto;
+        }
+
+
+   
+
+
+        .btn-normal {
+            margin-left: auto;
+        }
+        .body {
+            background-color: #000000;
+            font-family: "Montserrat", sans-serif;
+        }
+        .hero{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-position: left bottom;
+        }
+        .hero-pie{
+            background-color: #3d0000;
+            min-height: 20vh;
+            display: flex;
+            align-items: center;
+            background-position: left bottom;
+        }
+        .cards{
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+        .card{
+            width: 100%;
+            /* flex-basis:100%; */
+            background: #000000;
+            color: #fff;
+            border-radius: 16px;
+            padding: 20px;
+        }
+        .img{
+            width: 100%;
+            height: 100%;
+        }
+        .card-title{
+            font-weight: 700px;
+            margin-bottom: 25px;
+
+        }
+        .card-text{
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+        /* Estilo */
+
+        #seccion-negro {
+            background: #faf7f7;
+            color: #000000;
+            padding: 60px 0;
+        }
+        #seccion-negro h3 {
+            font-weight: 700;
+            font-size: 16;
+            margin-bottom: 0.5rem;
+            color: #3d0000;
+        }
+        #seccion-negro p {
+            color: #000000;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        #seccion-negro .btn-cta {
+            background: #950101;
+            border: none;
+            border-radius: 15px;
+            padding: 60px 0;
+            box-shadow: 0 4px 10px rgba(61, 0, 0, 0.25);
+            transition: all 0.25s ease;
+        }
+        #section-negro .btn-cta:hover {
+            background: #ff0000;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rba(149, 1, 1, 0.35);
+        }
+        .floating {
+            animation: floatY 3s ease-in-out infinite;
+        }
+
+
+        /* margen inferior en pantallas pequeñas */
+        .imagen-columna {  
+            margin-bottom: 24px;     
+        }
+
+        /* pantallas medianas o mayores de 768px */
+        @media (min-width: 768px){
+          .image-columna{
+            margin-bottom: 0,
+          }
+        }
+
+
+
+
+        @keyframes floatY {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body class="body">
+    <nav class="topnav">
+        <img src="icono.png" alt="coche porche deportivo negro" class="icon-nav" />
+        <a href="" class="btn-nav btn-normal">For company</a>
+        <a href="" class="btn-nav">Log in</a>
+    </nav>
+    <section class="hero">
+        <div class="cards">
+                <article class="card">
+                    <h1 class="card-title">Put your freelacing on Autopilot</h1>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                    <a class="btn" href="·">Crea una cuenta gratis</a>
+                </article>
+                <article class="card">
+                    <img src="coche.png" alt="" class="img">
+                </article>
+                </div>
+                
+
+    </section>
+    <section class="hero-pie">
+
+    </section>
+<!-- Termina la parte de sergio___________________________________________________________________________________________ -->
+
+
+     <section id="seccion-negro" class="py-5 position-relative overflow-hidden">
+        <div class="container">
+
+            <!-- imagen 1 -->
+            <div class="row align-items-center py-5">
+                <div class="col-md-6 text-center imagen-columna">
+                    <img src="porsche.jpg" alt="Porsche blanco" class="img-fluid floating" style="max-width:420px;">
+                </div>
+                <div class="col-md-6">
+                    <h3>Porsche</h3>
+                    <p>Edición especial única con diseño elegante y motor deportivo.</p>
+                    <a href="#" class="btn-cta d-inline-block">Más información</a>
+                </div>
+            </div>
+
+            <!-- Separador -->
+            <hr class="my-0" style="opacity:.08;">
+
+            <!-- imagen derecha y texto izquierda) -->
+            <div class="row align-items-center py-5">
+                <div class="col-md-6 order-md-2 text-center imagen-columna">
+                    <img src="porsche.jpg" alt="Porsche negro" class="img-fluid floating" style="max-width:420px;">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3>Porsche negro</h3>
+                    <p>Edición especial con acabado oscuro y tecnología avanzada.</p>
+                    <a href="#" class="btn-cta d-inline-block">Ver detalles</a>
+                </div>
+            </div>
+
+            <!-- Separador -->
+            <hr class="my-0" style="opacity:.08;">
+
+            <!-- imagen izquierda y texto derecha -->
+            <div class="row align-items-center py-5">
+                <div class="col-md-6 text-center imagen-columna">
+                    <img src="porsche.jpg" alt="Porsche edición limitada" class="img-fluid floating"
+                        style="max-width:420px;">
+                </div>
+                <div class="col-md-6">
+                    <h3>Porsche edición limitada</h3>
+                    <p>Potencia y lujo combinados. Un modelo exclusivo para verdaderos apasionados.</p>
+                    <a href="#" class="btn-cta d-inline-block">Aprender más</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
